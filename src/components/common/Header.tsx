@@ -45,7 +45,8 @@ function Header() {
                 <ul>
                     <li>
                         <a href="/login">
-                            <FaSignInAlt />로그인
+                            <FaSignInAlt />
+                            로그인
                         </a>
                     </li>
                     <li>
