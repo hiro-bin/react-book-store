@@ -11,7 +11,7 @@ function App() {
   const { themeName, toggleTheme } = useContext(ThemeContext);
   return (
     <BookStoreThemeProvider>
-      <ThemeSwitcher />
+      {/* <ThemeSwitcher /> */}
       <Layout>
         <Home />
       </Layout>
