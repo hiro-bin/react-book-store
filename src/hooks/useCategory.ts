@@ -19,7 +19,7 @@ export const useCategory = () => {
 
             setCategory(categoryWithAll);
         });
-    });
+    }, []);
 
     return {category};
 }

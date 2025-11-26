@@ -40,7 +40,7 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a href="/login">
+                        <a href="/signup">
                             <FaRegUser />
                             회원가입
                         </a>
