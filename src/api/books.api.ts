@@ -1,4 +1,4 @@
-import { Book } from "../models/book.model";
+import { Book, BookDetail } from "../models/book.model";
 import { Pagination } from "../models/pagination.model";
 import { httpClient } from "./http";
 
@@ -30,4 +30,21 @@ export const fetchBooks = async(params: FetchBooksParams) => {
             }
         }
     }
+};
+
+// string으로 받아야 코드 수가 줄고 편해서
+export const fetchBook = async(bookId: string) => {
+    const response = await httpClient.get<BookDetail>(`/books/${bookId}`);
+    return response.data;
+};
+
+// 화면에서 직접 bookId를 요청하기 때문에 number
+export const likeBook = async(bookId: number) => {
+    const response = await httpClient.post(`/likes/${bookId}`);
+    return response;
+};
+
+export const unLikeBook = async(bookId: number) => {
+    const response = await httpClient.delete(`/likes/${bookId}`);
+    return response;
 };
