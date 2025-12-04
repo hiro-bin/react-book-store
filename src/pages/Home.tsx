@@ -1,16 +1,17 @@
-import Button from "../components/common/Button";
-import InputText from "../components/common/InputText";
-import Title from "../components/common/Title";
+import { useEffect } from "react";
+import styled from "styled-components";
 
 function Home() {
-    return (
-        <>
-            {/* <Title size="large">제목 텍스트</Title>
-            <Button size="large" scheme="primary">버튼 텍스트</Button>
-            <InputText placeholder="여기에 입력하세요" /> */}
-            <div>home body</div>
-        </>
-    );
+
+  return (
+    <HomeStyle>
+        <h1>Home</h1>
+    </HomeStyle>
+  );
 }
+
+const HomeStyle = styled.div`
+    color: ${({ theme }) => theme.color.secondary};
+`;
 
 export default Home;
