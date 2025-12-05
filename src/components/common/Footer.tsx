@@ -7,7 +7,7 @@ function Footer() {
             <h1 className="logo">
                 <img src={logo} alt="book store" />
             </h1>
-            <div>
+            <div className="copyright">
                 <p>
                     copyright(c), 2025, book store.
                 </p>
@@ -36,6 +36,11 @@ const FooterStyle = styled.footer`
             font-size: 0.75rem;
             color: ${({ theme }) => theme.color.text};
         }
+    }
+
+    @media screen AND ${({ theme }) => theme.mediaQuery.mobile} {
+        flex-direction: column;
+        align-items: center;
     }
 `;
 

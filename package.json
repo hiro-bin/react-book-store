@@ -18,7 +18,9 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.6",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.31.0",
     "sanitize.css": "^13.0.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.19",
     "web-vitals": "^2.1.4",
     "zustand": "^5.0.8"
@@ -53,6 +55,7 @@
     "@faker-js/faker": "^10.1.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@types/react-slick": "^0.23.13",
     "craco-alias": "^3.0.1",
     "msw": "^2.12.3",
     "typescript": "^5.9.3"
